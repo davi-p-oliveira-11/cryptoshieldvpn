@@ -1,0 +1,465 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+/* Variables */
+
+:root {
+
+  /* Colors */
+
+  --primary-color: #1299EA;
+  --secondary-color: #D2E4F4;
+  --darker-blue:   #333254;
+  --bg-color:      #F6FAFD;
+
+  --white-color:   #ffffff;
+
+  /* gray colors */
+  --soft-black: #1A1A1A;
+
+ /* Typography */
+ --font-stack: 'Montserrat', sans-serif;
+
+ --fw-300: 300;
+ --fw-400: 400;
+ --fw-500: 500;
+ --fw-600: 600;
+ --fw-700: 700;
+ --fw-900: 900;
+
+}
+
+body {
+  font-family: var(--font-stack);
+  background-color: var(--bg-color);
+}
+
+/* Reused Styles */
+
+.btn {
+  padding: 15px 25px;
+  border: 6px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  transition: opacity;
+  border: none;
+  color: var(--white-color);
+}
+
+.btn-primary:focus {
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  opacity: 1;
+}
+
+/* Button Secondary */
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--soft-black);
+  opacity: 0.9;
+}
+
+.btn-secondary:focus {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
+  color: var(--gray-1);
+}
+
+.btn-secondary:hover {
+  opacity: 1;
+}
+
+.w-100 {
+  width: 100%;;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+
+/* Navbar */
+
+
+h2 {
+  font-size: 1,625rem;
+  color: var(--soft-black);
+}
+
+.navbar-brand span {
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  color: var(--primary-color);
+}
+
+.navbar {
+  padding: 30px 0;
+}
+
+a.nav-link {
+  margin-right: 28px;
+  font-size: 16px;
+  font-weight: var(--fw-500);
+  color: var(--soft-black);
+}
+
+/* Hero */
+
+section.hero {
+  margin: 10rem 0;
+}
+
+.copy .primary-text {
+  color: var(--primary-color);
+  font-weight: var(--fw-600);
+  margin: 24px 0;
+  font-size: 1rem;
+}
+
+.copy h2 {
+  font-size: 2.8rem;
+  font-weight: var(--fw-700);
+  color: var(--soft-black);
+}
+
+.copy span {
+  color: var(--primary-color);
+}
+
+.copy .common-text {
+  color: var(--soft-black);
+  font-weight: var(--fw-400);
+  margin: 24px 0;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+/* Services */
+.services .primary-text {
+  color: var(--primary-color);
+  font-weight: var(--fw-600);
+  margin: 24px 0;
+  font-size: 1rem;
+}
+
+.services h2 {
+  font-size: 2.8rem;
+  font-weight: var(--fw-700);
+  color: var(--soft-black);
+}
+
+.services span {
+  color: var(--primary-color);
+}
+
+.services .card-body i {
+  font-size: 50px;
+}
+
+.services h5 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: var(--fw-500);
+}
+
+.services p {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+/* Team */
+
+.team {
+  margin-top: 160px;
+}
+
+.img-overlay::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--primary-color, 0.7);
+  z-index: 1;
+}
+
+/* Team end */
+
+/* Testimonials */
+
+.testimonials {
+  margin-top: 160px;
+} 
+
+.testimonials .primary-text {
+  color: var(--primary-color);
+  font-weight: var(--fw-600);
+  margin: 24px 0;
+  font-size: 1rem;
+}
+
+.testimonials h2 {
+  margin-top: -30px;
+  font-size: 2.8rem;
+  font-weight: var(--fw-700);
+}
+
+.testimonials h3 {
+  font-size: 1.3rem;
+  font-weight: var(--fw-700);
+  color: var(--soft-black);
+}
+
+.testimonials span {
+  color: var(--primary-color);
+}
+
+.card-row {
+  margin-top: 80px;
+}
+
+/* Planos */
+
+.planos h2 {
+  font-size: 2.8rem;
+  font-weight: var(--fw-700);
+  color: var(--soft-black);
+}
+
+.planos .primary-text {
+  color: var(--primary-color);
+  font-weight: var(--fw-600);
+  margin: 24px 0;
+  font-size: 1.8rem;
+}
+
+.planos h3 {
+  font-size: 1.6rem;
+  font-weight: var(--fw-600);
+  color: var(--soft-black);
+}
+
+.planos .card-body i {
+  font-size: 50px;
+}
+
+.planos button {
+  margin-top: 50px;
+}
+
+/* contact */
+
+.contact h2 {
+  font-size: 2.8rem;
+  font-weight: var(--fw-700);
+  color: var(--soft-black);
+}
+
+/* Tablet small version only */
+
+@media (max-width: 768px) {
+
+  /* Utils */
+  .section-padding {
+    padding: 10px 0;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: 6px;
+    border: none;
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    padding: 28px 0;
+  } 
+
+  a.nav-link {
+    margin-right: 2px 0;
+    text-align: center;
+  }
+
+  /* Hero */
+
+  section.hero {
+    margin: 1rem 0;
+  }
+
+  .copy h2 {
+    font-size: 1.8rem;
+  }
+
+  .copy .primary-text,
+  .copy h2,
+  .copy .common-text {
+    text-align: center;
+  }
+
+  .copy .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .hero img {
+    margin: 2rem 0;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .cta .button-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Services */
+  
+  .services h2 {
+    font-size: 1.8rem;
+  }
+
+  .services .primary-text,
+  .services h2,
+  .services .common-text {
+    text-align: center;
+  }
+
+  .services .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  
+  .card {
+    margin-top: 10px;
+  }
+
+  /* Team */
+
+  .team h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+  }
+
+  .team .primary-text,
+  .team h2,
+  .team .common-text {
+    text-align: center;
+  }
+
+  .team .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  /* Testimonials */
+  
+  .testimonials h2 {
+    margin-top: -30px;
+    font-size: 1.8rem;
+  }
+
+  .testimonials .primary-text,
+  .testimonials h2,
+  .testimonials .common-text {
+    text-align: center;
+  }
+
+  .testimonials .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  /* Planos */
+
+  .planos h2 {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: var(--fw-700);
+  }
+
+  .planos .primary-text,
+  .planos h2,
+  .planos .common-text {
+    text-align: center;
+  }
+
+  .planos .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  /* Contato */
+
+  /* Planos */
+
+  .contact h2 {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: var(--fw-700);
+  }
+
+  .contact .primary-text,
+  .contact h2,
+  .contact .common-text {
+    text-align: center;
+  }
+
+  .contact .common-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  /* Footer */
+
+  footer .container {
+    font-size: 0.8rem;
+  }
+
+
+}
+
+/* Tablet medium and large version only */
+
+@media (max-width: 992px) {
+
+  /* Navbar */
+
+  .navbar {
+    padding: 28px 0;
+  } 
+
+  a.nav-link {
+    margin-right: 2px 0;
+    text-align: center;
+  }
+
+  /* Hero */
+
+  section.hero {
+    margin: 8rem 0;
+  }
+
+  .section.hero-img {
+    margin: 2rem 0;
+  }
+
+  .copy .common-text {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+}
+
